@@ -1,50 +1,54 @@
-- info
-    - lv1
-    - 정렬
+-   info
+    -   lv1
+    -   Sorting
 
-# 출정인원 선발
-![연설하는 자바독](./3_1.webp)
+# Selecting Personnel for Expedition
 
-## 문제 설명
-자바독은 마을로 돌아왔습니다. 마을은 일할 수 있는 청장년들이 모두 차출되어 어린이와 청소년만 남아있는 기이한 풍경이었습니다. 자바독은 각 부족에 전서를 보내 라이언에게 충성하며 각종 험난한 SI 작업에 끌려다녀 수십 년간 제대로 된 식사 한 번 못 했던 특급 기술자들을 불러 모읍니다. 그리고 묵묵히 정성스레 저녁 식사를 대접합니다. 횟수가 반복될수록 특급기술자들의 마음이 열리게 되었습니다.
+![Javadog giving a speech](./3_1.webp)
 
-자바독이 가진 스톤은 마인드 스톤! 자바독은 마인드 스톤을 통해 혁명이 일어난 후 30년, 50년 후 그들의 노후를 보여줬어요. 그리고 다음 자녀들의 미래를요.
+## Problem Description
 
-" 우리의 미래가 아니라, 우리 자녀들의 미래를 위해서!
+Javadog has returned to the village. The village looked strange with only children and teenagers remaining, as all the capable young men have been called away to various tasks. Javadog brought in the special engineers who have never had a decent meal for decades since being dragged around by various hazardous tasks and prepared a lavish dinner for them. The special engineers started to open up to Javadog as they gathered often.
 
-자바독은 능력자를 선별했습니다. 이미 고도로 단련된 특급 기술자! 그러나 희생을 최소화하기 위해 시험을 보기로 했습니다. 시험을 본 인원에 상위 30%만 전투에 참가하기로 결정했어요.
+Javadog's stone is the Mind Stone! With the Mind Stone, Javadog showed them the next 30 and 50 years after a revolution and the future of the next generation.
 
-" 아무도 나오지 않는다면, 아무도 출정하지 않는다독!
+" Not for our future, but the future of our children!
+
+Javadog selected talented individuals among them. However, they decided to take an exam to minimize the sacrifices. Only the top 30% of those who took the exam would be selected for the expedition.
+
+" If no one comes out, no one will go out!
 
 ```py
 army = [['A', 25, 24, 11, 12], ['B', 13, 22, 16, 14]]
 ```
 
-각 입력값은 `이름, 체력, 정신력, 기술력, 방어력`으로 주어집니다. 위와 같이 만약 2명만 지원한다면 상위 30%를 선발할 수 없기에 아무도 출정하지 않습니다. 만약 4명이 지원을 하였고 모두가 점수가 다르다면 단 한 명만 출정할 수 있어요. 상위 30%에 해당하는 기술자의 이름을 return하는 solution 함수를 완성하세요. 
+Each input value is given in the form of `name, strength, mentality, technical skills, defensive power`. If only two people apply as shown above, top 30% cannot be selected, so no one will go out. If four people apply and all have different scores, only one person can go out. Complete the solution function that returns the name of the technician corresponding to the 30% selection criteria.
 
 ---
 
-## 제한 사항
+## Constraints
 
-- 0 ≤ 체력, 정신력, 기술력, 방어력 ≤ 25
-- 1 ≤ 기술자 수 ≤ 10
-- 기술자 이름은 중복되지 않습니다.
-- 기술자 배열은 2차원 배열로 주어집니다. 기술자의 이름, 체력, 정신력, 기술력, 방어력이 담긴 배열이 담긴 배열을 입력받습니다.
-- 체력, 정신력, 기술력, 방어력의 총합을 구하여 점수가 높은 순으로 상위 30%의 지원자를 선발해야 합니다. 동점자가 있는 경우에도 총인원에 30%가 넘지 않도록 선발해야합니다. 
-- 상위 동일 점수가 30%가 넘어가는 경우에도 아무도 선발하지 못합니다.
-- 기술자들의 이름은 알파벳의 역순으로 출력합니다.
-
----
-
-## 입출력 예
-
-|          입력         |  출력 |
-| ------------------------ | ------- |
-| [['A', 25, 24, 11, 12], ['B', 13, 22, 16, 14]] | [] |
-| [['A', 25, 25, 25, 25], ['B', 10, 12, 13, 11], ['C', 24, 22, 23, 21], ['D', 13, 22, 16, 14]] | ['A'] |
+-   0 ≤ strength, mentality, technical skills, defensive power ≤ 25
+-   1 ≤ number of technicians ≤ 10
+-   The technician list is given as a two-dimensional list. Each list of input consists of the technician's name, strength, mentality, technical skills, and defensive power.
+-   The top 30% of applicants should be selected in the order of high scores by obtaining the sum of their strength, mentality, technical skills, and defense. Even if there is a tie, the total number of people should not exceed 30%.
+-   Technician names are not duplicated.
+-   In case of a tie, only one person is considered.
+-   If the number of tied technicians who get the highest score exceeds 30% of the total, no one can be selected.
+-   The names of the technicians are returned in reversed alphabetical order.
 
 ---
 
-## 입출력 설명
-- 1번 : 2명 중 한 명에게 장학금을 주게 되면 50%를 주게 되는 것이니 아무도 줄 수 없습니다.
-- 2번 : 4명 중 한 명에게 장학금을 주게 되면 25%로 30% 미만이니 최고 점수인 'A'만 장학금을 받을 수 있습니다.
+## Examples
+
+| Input                                                                                        | Output |
+| -------------------------------------------------------------------------------------------- | ------ |
+| [['A', 25, 24, 11, 12], ['B', 13, 22, 16, 14]]                                               | []     |
+| [['A', 25, 25, 25, 25], ['B', 10, 12, 13, 11], ['C', 24, 22, 23, 21], ['D', 13, 22, 16, 14]] | ['A']  |
+
+---
+
+## Explanation for Examples
+
+-   No one can be selected because selecting one of two equals 50%.
+-   Only 'A' with the highest score can be selected because selecting one of the four people equals 25% which is less than 30%.
