@@ -1,5 +1,5 @@
 -   info
-    -   lv1
+    -   Lv.1
     -   Sorting
 
 # Selecting Personnel for Expedition

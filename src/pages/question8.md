@@ -1,5 +1,5 @@
 -   info
-    -   lv0
+    -   Lv.0
     -   Math
 
 # Weapon Production

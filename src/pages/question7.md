@@ -1,5 +1,5 @@
 -   info
-    -   lv1
+    -   Lv.1
     -   Two Pointers | Sliding Window
 
 # Sum of Two Numbers
