@@ -21,7 +21,7 @@ Adjacent ingredients cannot be put together because they don't fit well each oth
 ## Constraints
 
  - The array of ingredients is always fixed at 8. 
- - The maximum number of ingredients that can be taken for each type of ingredient is displayed as a number in an array. For example, `[1, 2, 3, 4, 10, 20, 30, 40]` means that 1 block of tofu, 2 mushrooms, 3 servings of vermicelli, 4 servings of bean sprouts, 10 Chinese chives, 20 cabbage leaves, 30 potato slices, and 40 pieces of meat can be taken. 
+ - The maximum number of ingredients that can be taken for each type of ingredient is displayed as a number in an array. For example, `[1, 2, 3, 4, 10, 20, 30, 40]` means that 1 block of tofu, 2 mushrooms, 3 cups of noodles, 4 cups of bean sprouts, 10 bok choys, 20 cabbage leaves, 30 potato slices, and 40 pieces of meat can be taken. 
  - The maximum number of ingredients that can be put into the Spicy Hot Pot is an integer between 1 and 1,000,000.
 
 ---
@@ -38,8 +38,8 @@ Adjacent ingredients cannot be put together because they don't fit well each oth
 
 ## Explanation for Examples
 
-An array of the number of Spicy Hot Pot ingredients, `[2, 4, 1, 3, 5, 8, 8, 6]`, is given as input.
+An array of the number of ingredients, `[2, 4, 1, 3, 5, 8, 8, 6]`, is given as input.
 
-If you put 2 ingredients of tofu, you cannot put 4 mushrooms because they are next to each other. Therefore, skip one and add 1, which is the next number. This process should be repeated and the maximum value should be compared to get the maximum sum of the ingredients.
+If you put 2 blocks of tofu, you cannot put 4 mushrooms because they are next to each other. Therefore, skip one and add 1, which is the next number. This process should be repeated and the maximum value should be compared to get the maximum sum of the ingredients.
 
 The maximum value that can be obtained when starting with 2 is 19 (2+3+8+6). However, if you start with 4, you can get 21 (4+3+8+6). Therefore, the answer is 21.

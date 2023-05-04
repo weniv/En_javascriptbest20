@@ -4,7 +4,7 @@
 
 # Sum of Two Numbers
 
-![SoulGom visits a mine in the Arctic](./7_1.webp)
+![SoulGom visiting a mine in the Arctic](./7_1.webp)
 
 ## Problem Description
 

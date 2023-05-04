@@ -30,7 +30,8 @@ Given the ingredients that Licat receives in a list, output the number of sandwi
     -   1: bread
     -   2: egg
     -   3: bacon
-    -   4: vegetable
+    -   4: vegetable 
+    
 -   There is only one correct answer.
 
 ---

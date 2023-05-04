@@ -14,7 +14,7 @@ In the above graph, buying at the highest price (61,100) and selling at the lowe
 
 <br/>
 
-Let's assume that input values are entered in the order of 58000, 58700, 55300, 54200, 53600, 52700, 57700, 61100. Let's calculate the maximum loss of each interval according to the timeline.
+For example, input values are entered in the order of 58000, 58700, 55300, 54200, 53600, 52700, 57700, 61100. Let's calculate the maximum loss of each interval according to the timeline.
 
 | Day | Input | Highest Price | Lowest Price | Maximum Loss |
 | --- | ----- | ------------- | ------------ | ------------ |
@@ -30,7 +30,7 @@ Let's assume that input values are entered in the order of 58000, 58700, 55300, 
 -   Day2: If we designate Day2 as the buying point for the worst possible loss record, the price on Day1 which is the previous day before the buying point becomes meaningless.
 -   Day8: Even though it reached the highest price, it is not updated since there is no more opportunity to sell.
 
-Therefore, the maximum loss amount for this graph is 6000 won. Complete a function to calculate the maximum loss amount according to the input value like this.
+Therefore, the maximum loss amount for this graph is 6000 won. Complete a function to calculate the maximum loss amount according to the input value like above.
 
 ---
 

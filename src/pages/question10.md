@@ -8,15 +8,15 @@
 
 ## Problem Description
 
-After Gary used the Space Stone to saved people from slavery using the Space Stone, Ali has opened a Poke store that she has always liked. Kind Ali guides all possible combinations of Poke that can be made when customers tell the number of toppings they want and the toppings they want to include.
+After Gary used the Space Stone to save people from slavery work, Ali opened a Poke store that she has always liked. Kind Ali guides all possible combinations of poke that can be made when customers tell the number of toppings they want and the toppings they want to include.
 
-The toppings that can be put in Poke are as follows:
+The toppings that can be put in poke are as follows:
 
 ```text
 salmon, tuna, chicken, bacon, mushroom
 ```
 
-Customers can choose up to 5 toppings, including toppings that must be included. Ali must guide the combination of Poke that matches the order.
+Customers can choose up to 5 toppings, including toppings that must be included. Ali must guide the combination of poke that matches the order.
 
 However, if nothing is entered, it must be informed that `"Basic Poke will be provided."`
 
@@ -24,7 +24,7 @@ However, if nothing is entered, it must be informed that `"Basic Poke will be pr
 
 ## Constraints
 
--   0 ≤ Number of toppings ≤ 5
+-   0 ≤ number of toppings ≤ 5
 -   The toppings must be selected among `salmon, tuna, chicken, bacon, mushroom`.
 
 ---
@@ -44,14 +44,14 @@ However, if nothing is entered, it must be informed that `"Basic Poke will be pr
 
 -   The number of toppings and must-have toppings are given in an array.
 -   The number of toppings can be entered from 0 to 5. In addition, toppings must be selected among salmon, tuna, chicken, bacon, mushroom and entered as a string.
--   If you do not choose toppings, enter an empty string.
+-   If no toppings are chosen, an empty string is entered.
 -   The combination of toppings is output as an array.
 
 <br/>
 
 ### 1. When nothing is entered
 
-If nothing is entered, that is, if an empty array ([]) is entered, the number of toppings is considered to be 0 and there are no desired toppings. Therefore, an output will be `"Default Poke will be provided."`.
+If nothing is entered, that is, if an empty array ([]) is entered, the number of toppings is considered to be 0 and there are no desired toppings. Therefore, the output will be `"Default Poke will be provided."`.
 <br/>
 
 ### 2. When both the number of toppings and toppings are entered
@@ -68,7 +68,7 @@ you must choose 2 toppings that include "salmon" out of 5 toppings. All possible
 
 ### 3. When no topping is entered
 
-For example, if the number of toppings is entered as 3 but no topping is actually entered, then you must choose 3 toppings from the 5 available toppings without including any toppings that are required. The combinations are as follows.
+For example, if the number of toppings is entered as 3 but no topping is actually entered, then you must choose any 3 toppings from the 5 available toppings. The combinations are as follows.
 
 ```text
 [["salmon", "tuna", "chicken"], ["salmon", "tuna", "bacon"], ["salmon", "tuna", "mushroom"],

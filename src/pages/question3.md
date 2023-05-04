@@ -2,13 +2,13 @@
     -   Lv.1
     -   Sorting
 
-# Selecting Personnel for Expedition
+# Selecting Expedition Members
 
 ![Javadog giving a speech](./3_1.webp)
 
 ## Problem Description
 
-Javadog has returned to the village. The village looked strange with only children and teenagers remaining, as all the capable young men have been called away to various tasks. Javadog brought in the special engineers who have never had a decent meal for decades since being dragged around by various hazardous tasks and prepared a lavish dinner for them. The special engineers started to open up to Javadog as they gathered often.
+Javadog has returned to the village. The village looked strange with only children and teenagers remaining as all the capable young men have been called away to various tasks. Javadog brought in the special engineers who have never had a decent meal for decades since being dragged around by various hazardous tasks and prepared a lavish dinner for them. The special engineers started to open up to Javadog as they gathered often.
 
 Javadog's stone is the Mind Stone! With the Mind Stone, Javadog showed them the next 30 and 50 years after a revolution and the future of the next generation.
 
@@ -31,9 +31,8 @@ Each input value is given in the form of `name, strength, mentality, technical s
 -   0 ≤ strength, mentality, technical skills, defensive power ≤ 25
 -   1 ≤ number of technicians ≤ 10
 -   The technician list is given as a two-dimensional list. Each list of input consists of the technician's name, strength, mentality, technical skills, and defensive power.
--   The top 30% of applicants should be selected in the order of high scores by obtaining the sum of their strength, mentality, technical skills, and defense. Even if there is a tie, the total number of people should not exceed 30%.
+-   The top 30% of applicants should be selected in the order of high scores by obtaining the sum of their strength, mentality, technical skills, and defensive power. Even if there is a tie, the total number of people should not exceed 30%.
 -   Technician names are not duplicated.
--   In case of a tie, only one person is considered.
 -   If the number of tied technicians who get the highest score exceeds 30% of the total, no one can be selected.
 -   The names of the technicians are returned in reversed alphabetical order.
 
@@ -50,5 +49,5 @@ Each input value is given in the form of `name, strength, mentality, technical s
 
 ## Explanation for Examples
 
--   No one can be selected because selecting one of two equals 50%.
--   Only 'A' with the highest score can be selected because selecting one of the four people equals 25% which is less than 30%.
+- Example 1: No one can be selected because selecting one of two equals 50%.
+- Example 2: Only 'A' with the highest score can be selected because selecting one of the four people equals 25% which is less than 30%.

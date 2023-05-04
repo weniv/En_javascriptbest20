@@ -16,7 +16,7 @@ Licat anchored the ship on the beach and began to explore the island in search o
 
 A skull with a cloak floated up from the water. An old legend popped up in Licat's head. It was about a cursed Lich who was trapped on Skull Island and turned any cat that trespassed on his territory into stone. 
 
-" I'll give you a greedy problem as you've come to a place where alive visitors cannot come. If you solve this, I'll give you something which could be a curse and a gift.
+" I'll give you a greedy problem. If you solve this, I'll give you something which could be a curse and a gift.
  
 The Lich uttered an unknown spell.
 
