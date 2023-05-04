@@ -14,14 +14,14 @@ Although the Real Stone cannot actually help them make it happen, it can at leas
 
 ```py
 ['Binky trained 10 times "A". Binky trained 20 times "B" even though the weather was bad. Binky trained 10 times "B" while it was raining.',
-'Binky contemplated about "A" as much as 30. Binky thought thought about "B" as much as 40. Binky spent a long time, 70, thinking about "A". Surprisingly, Binky thought 10 times "C".']
+'Binky contemplated about "A" as much as 30. Binky thought about "B" as much as 40. Binky spent a long time, 70, thinking about "A". Surprisingly, Binky thought 10 times "C".']
 ```
 
 Extract all the numbers from the first string. The number of times "A" was trained is 10 and the number of times "B" was trained is 30. Extract numbers from the second string as well. The number of times "A" was thought about is 100, the number of times "B" was thought about is 40, and the number of times "C" was thought about is 10. Calculate this value as `training value X consideration value`. "C" disappears because it was not trained.
 
 Original future: When multiplying the number of times "A" was trained by the number of times "A" was thought about, the result is 1000. When multiplying the number of times "B" was trained by the number of times "B" was thought about, the result is 1200. Sum of these values is the original future.
 
-Changed future: Add 100 to the value that was trained the most. Add 100 to the value that was thought about the most. Therefore, the number of times "B" was trained becomes 130 and the number of times "A" was thought about becomes 200. Finally, since the number of times "A" was trained is 10 and the number of times "A" was thought about is 200, the result is 2000, and the number of times "B" was trained is 130, and the number of times "B" was thought about is multiplied by 40 to become 5200.
+Changed future: Add 100 to the value that was trained most and thought about most. Therefore, the number of times "B" was trained becomes 130 and the number of times "A" was thought about becomes 200. Finally, since the number of times "A" was trained is 10 and the number of times "A" was thought about is 200, the result is 2000. The number of times "B" was trained is 130, and the number of times "B" was thought about is 40, so  the result of multiplication becomes 5200.
 
 The result is as follows.
 
@@ -53,7 +53,7 @@ The result is as follows.
 ## Explanation for Examples
 
 -   The training values are 100 for "A" and 321 for "B". Since "B" was trained more, adding 100 to "B" makes it 421.
--   The consideration values are 110 for "A" and 40 for "B". The rest are ignored as they do not match the training values. Since "A" considered more, adding 100 to "A" makes it 210.
--   The original future value (100 _ 110) + (321 _ 40) results in 23840.
--   The changed future value (100 _ 210) + (421 _ 40) results in 37840.
+-   The consideration values are 110 for "A" and 40 for "B". The rest are ignored as they do not match the training values. Since "A" was considered more, adding 100 to "A" makes it 210.
+-   The original future value (100 * 110) + (321 * 40) results in 23840.
+-   The changed future value (100 * 210) + (421 * 40) results in 37840.
 -   Based on these results, return the text "The final design of the dream was originally 23840 but changed to 37840. We create Vision based on these numbers."

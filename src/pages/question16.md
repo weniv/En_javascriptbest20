@@ -19,7 +19,7 @@ Given an input array consisting of ASCII codes, it should be converted to corres
 | D | 500 |
 | M | 1000 |
 
-Roman numerals can be written in subtractive notation, meaning that a smaller numeral can be placed before a larger numeral to represent a single numeral using two characters. For example, IV represents 4 (5-1). The solution function should follow this notation rule.
+Roman numerals can be written in subtractive notation, meaning that a smaller numeral is placed before a larger numeral to represent a single numeral using two characters. For example, IV represents 4 (5-1). The solution function should follow this notation rule.
 
 ---
 

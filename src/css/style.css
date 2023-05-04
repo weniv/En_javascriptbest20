@@ -908,7 +908,6 @@ header .menu-nav.is-active {
 }
 
 .description table th {
-	white-space: nowrap;
 	font-weight: bold;
 	background: rgba(0, 0, 0, 0.3);
 }
