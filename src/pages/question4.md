@@ -1,58 +1,59 @@
-- info
-    - lv1
-    - 정규표현식
+-   info
+    -   Lv.1
+    -   Regular Expression
 
-# 꿈의 설계
-![리얼스톤을 가진 빙키](./4_1.webp)
+# Dream Design
 
-## 문제 설명
-리얼스톤을 가진 빙키는 현실과 같은 허상을 만들어낼 수 있게 되었습니다. 빙키는 이 허상을 통해 바꿀 수 있는 미래를 보여주기로 했어요. 주도적으로, 주체적으로 사는 이들이 얼마나 많은 것을 이룰 수 있는지요.
+![Binky with Real Stone](./4_1.webp)
 
-본 것을 이룰 수 있는지는 리얼 스톤이 해줄 수 있는 일은 아니었지만, 적어도 절망이 뿌리 깊이 내린 위니브 월드 안에 한 줄기 빛이 될 수는 있을 겁니다.
+## Problem Description
 
-```py
-['빙키는 10만큼 A를 훈련했다. 빙키는 날씨가 안 좋은데도 불구하고 20만큼 B를 했다. 빙키는 비가 내리는 가운데서도 10만큼 B를 훈련했다.', '빙키는 A를 30만큼 고민했다. 40만큼 B를 고민했다. 빙키는 A를 70만큼 참 오랜 시간 고민했다. 빙키는 놀랍게도 C를 10만큼 고민했다.']
-```
+Binky who has the Real Stone can create a fantasy world just like reality. Binky decides to show the future through this illusion like how many things can be achieved by those who live autonomously and independently.
 
-첫 번째 문자열에서 숫자를 모두 추출합니다. A를 훈련한 수치는 10, B를 훈련한 수치는 30입니다. 두 번째 문자열에서도 숫자를 추출합니다. A를 고민한 수치는 100, B를 고민한 수치는 40입니다. C를 고민한 수치는 10입니다. 이 수치를 `훈련수치 X 고민수치`로 계산합니다. C는 훈련하지 않았기 때문에 사라집니다.
-
-
-원래 미래 : A를 훈련한 수치와 A를 고민한 수치를 곱하면 1000이 나옵니다. B를 훈련한 수치와 B를 고민한 수치를 곱하면 1200이 나옵니다. 이를 더하면 원래 미래가 나옵니다.
-
-
-바뀐 미래 : 가장 많이 훈련한 수치에 100을 더합니다. 가장 많이 고민한 수치에 100을 더합니다. 따라서 B를 훈련한 수치는 130이 되고, A를 고민한 수치는 200이 됩니다. 최종적으로 A를 훈련한 수치는 10, A를 고민한 수치는 200이 되므로 2000 값이 되고, B를 훈련한 수치는 130에 B를 고민한 수치 40을 곱하여 5200이 됩니다.
-
-결괏값은 아래와 같이 출력됩니다.
+Although the Real Stone cannot actually help them make it happen, it can at least become a ray of hope in the desperate Weniv World.
 
 ```py
-'최종 꿈의 설계는 원래 미래 2200, 바뀐 미래 7200입니다. 이 수치대로 Vision을 만듭니다.'
+['Binky trained 10 times "A". Binky trained 20 times "B" even though the weather was bad. Binky trained 10 times "B" while it was raining.',
+'Binky contemplated about "A" as much as 30. Binky thought about "B" as much as 40. Binky spent a long time, 70, thinking about "A". Surprisingly, Binky thought 10 times "C".']
+```
+
+Extract all the numbers from the first string. The number of times "A" was trained is 10 and the number of times "B" was trained is 30. Extract numbers from the second string as well. The number of times "A" was thought about is 100, the number of times "B" was thought about is 40, and the number of times "C" was thought about is 10. Calculate this value as `training value X consideration value`. "C" disappears because it was not trained.
+
+Original future: When multiplying the number of times "A" was trained by the number of times "A" was thought about, the result is 1000. When multiplying the number of times "B" was trained by the number of times "B" was thought about, the result is 1200. Sum of these values is the original future.
+
+Changed future: Add 100 to the value that was trained most and thought about most. Therefore, the number of times "B" was trained becomes 130 and the number of times "A" was thought about becomes 200. Finally, since the number of times "A" was trained is 10 and the number of times "A" was thought about is 200, the result is 2000. The number of times "B" was trained is 130, and the number of times "B" was thought about is 40, so  the result of multiplication becomes 5200.
+
+The result is as follows.
+
+```py
+'The final design of the dream was originally 2200 but changed to 7200. We create Vision based on these numbers.'
 ```
 
 ---
 
-## 제한 사항
+## Constraints
 
-- 입력 배열의 길이는 2입니다. [훈련수치, 고민수치]의 형태로 문자열이 입력됩니다.
-- 수치 문자열은 항상 마침표 단위로 문장이 나뉩니다. 나누어진 문장을 나뉜 문장이라고 했을 때 나뉜 문장에는 항상 유일한 수치와 유일한 알파벳이 있습니다.
-- 매칭되는 고민 수치와 훈련 수치가 없을 경우에는 ‘미래가 보이지 않습니다.’라고 출력해야 합니다.
-- 1 ≤ 나뉜 문장  ≤ 10
-- 1 ≤ 수치 ≤ 1000
-- A ≤ 알파벳 ≤ z
-
----
-
-## 입출력 예
-
-| 입력                                  | 출력  |
-| ---------------------------------------- | ------- |
-| ['100만큼 A를 훈련. 201 B.  120보다 이십만큼 더 B를 훈련했다.', '30만큼 A를 고민했다. 40만큼 B를 고민. 빙키는 A를 70만큼. C 10. D 10. A 10. z 10.'] | '최종 꿈의 설계는 원래 미래 23840, 바뀐 미래 37840입니다. 이 수치대로 Vision을 만듭니다.' |
+-   The length of the input list is 2. Strings are entered in the form of [training value, consideration value].
+-   Strings are always sentence-separated by a period. There is always a unique number and a unique alphabet wrapped in double quotation marks(`""`) in each split sentence.
+-   If there is no matching consideration value or training value, the output should be "The future is not visible.".
+-   1 ≤ number of split sentences ≤ 10
+-   1 ≤ numeric value ≤ 1000
+-   A ≤ alphabet ≤ z
 
 ---
 
-## 입출력 설명
+## Examples
 
-- 훈련수치는 A는 100, B는 321입니다. B를 더 많이 훈련하였으므로 B에 100을 더해 421이 됩니다.
-- 고민수치는 A는 110, B는 40입니다. 나머지는 훈련수치와 짝이 맞는 것이 없으므로 무시됩니다. A를 더 많이 고민했으므로 A에 100을 더하여 210이 됩니다.
-- (100 * 110) + (321 * 40)을 연산하여 원래 미래는 23840 값이 나옵니다.
-- (100 * 210) + (421 * 40)을 연산하여 바뀐 미래는 37840 값이 나옵니다.
-- 이 결과를 바탕으로 '최종 꿈의 설계는 원래 미래 23840, 바뀐 미래 37840입니다. 이 수치대로 Vision을 만듭니다.'라는 텍스트를 만듭니다. 콤마는 찍지 않습니다.
+| Input                                                                                                                                                                                      | Output                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| ['Trained 100 times "A". 201 for "B". Practiced "B" twenty more than 120.', 'Contemplated "A" as much as 30. Contemplated "B" as much as 40. 70 for "A". "C" 10. "D" 10. "A" 10. "z" 10.'] | 'The final design of the dream was originally 23840 but changed to 37840. We create Vision based on these numbers.' |
+
+---
+
+## Explanation for Examples
+
+-   The training values are 100 for "A" and 321 for "B". Since "B" was trained more, adding 100 to "B" makes it 421.
+-   The consideration values are 110 for "A" and 40 for "B". The rest are ignored as they do not match the training values. Since "A" was considered more, adding 100 to "A" makes it 210.
+-   The original future value (100 * 110) + (321 * 40) results in 23840.
+-   The changed future value (100 * 210) + (421 * 40) results in 37840.
+-   Based on these results, return the text "The final design of the dream was originally 23840 but changed to 37840. We create Vision based on these numbers."

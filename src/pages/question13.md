@@ -17,8 +17,8 @@ Licat wanted his colleagues to rest in a more spacious place when coming up. Giv
 ## Constraints
 
 - Input is given as a two-dimensional array. The first one is an array of `weights`, and the second is the `minimum weight limit`.
-- The weight of colleagues is an integer between 1 and 100, inclusive. 
-- K is an integer between 0 and 50, inclusive. 
+- 1 ≤ weight of each colleague ≤ 100
+- 0 ≤ K ≤ 50
 - If no one can board the flight, return -1.
 
 ---

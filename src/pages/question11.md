@@ -3,7 +3,7 @@
     - Tree | Linked List | Trie
 
 # Mura's Spilled Latte
-![Heoni spilled the latte](./11_1.webp)
+![Mura's spilled latte by Heoni](./11_1.webp)
 
 ## Problem Description
 Mura, the strategist, was forming a revolutionary team in her notebook! When butler Heoni was passing the latte to Mura, it fell directly onto Mura's notebook.

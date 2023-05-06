@@ -738,6 +738,10 @@ header .menu-nav.is-active {
     color: var(--ColorWhite);
 }
 
+.description .code-syntex {
+	color: inherit
+}
+
 /* 제목 */
 .que-tit1 {
     font-size: 1.3em;
@@ -910,9 +914,8 @@ header .menu-nav.is-active {
 }
 
 .description table th {
-    white-space: nowrap;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.3);
 }
 
 .description table tr:nth-child(odd) {

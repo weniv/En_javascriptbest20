@@ -119,7 +119,7 @@ $languageSelector.addEventListener('change', (e) => {
     lang = e.target.value;
 
     if (lang === 'python'){
-        window.location = 'https://pyalgo.co.kr/';
+        window.location = 'https://pyalgo.net/';
     } else {
         return;
     }
