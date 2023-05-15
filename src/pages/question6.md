@@ -12,12 +12,12 @@ Licat traveled around the city without telling anyone about his return. Despite 
 
 Licat settled in the village where people who returned from Lion Town gathered. Their minds and spirits got exhausted and no one cared about them, so they comforted each other and built a village.
 
-Licat set up a free sandwich cafeteria here and took care of the packaging work without asking anyone. Licat got up early in the morning and prepared the ingredients. However, since there was a limit to what could be obtained from the village, he prepared the ingredients from the surrounding villages. Once the ingredients were ready, he packaged a sandwich one by one in the order of `bread → egg → bacon → vegetable → bread`.
+Licat set up a free sandwich cafeteria here and took care of the packaging work without asking for help. Licat got up early in the morning and prepared the ingredients. However, since there was a limit to what could be obtained from the village, he prepared the ingredients from the surrounding villages. Once the ingredients were ready, he packaged a sandwich one by one in the order of `bread → egg → bacon → vegetable → bread`.
 
 1. When the ingredients come in the order of [bread, bread, egg, bacon, vegetable, bread, egg, bacon, vegetable, bread],
 2. You can package one sandwich from the second to sixth ingredients.
 3. Now, you can package one sandwich with the first ingredient and the seventh to tenth ingredients.
-4. Therefore, a total of two sandwiches can be made. Sandwiches cannot be packaged if the order of the ingredients is reversed.
+4. Therefore, a total of two sandwiches can be made. Sandwiches cannot be packaged if the order of the ingredients is changed.
 
 Given the ingredients that Licat receives in a list, output the number of sandwiches that can be packaged.
 

@@ -16,7 +16,7 @@ The toppings that can be put in poke are as follows:
 salmon, tuna, chicken, bacon, mushroom
 ```
 
-Customers can choose up to 5 toppings, including toppings that must be included. Ali must guide the combination of poke that matches the order.
+Customers can choose up to 5 toppings and can also choose the kind of toppings that must be included. Ali must guide the combination of poke that matches the order.
 
 However, if nothing is entered, it must be informed that `"Basic Poke will be provided."`
 
@@ -36,7 +36,7 @@ However, if nothing is entered, it must be informed that `"Basic Poke will be pr
 | []                  | “Basic Poke will be provided.”                                                                                                                                                                                                                                                                    |
 | [2, “salmon”]       | [["salmon", "tuna"], ["salmon", "chicken"], ["salmon", "bacon"], ["salmon", "mushroom"]]                                                                                                                                                                                                          |
 | [3, “salmon, tuna”] | [["salmon", "tuna", "chicken"], ["salmon", "tuna", "bacon"], ["salmon", "tuna", "mushroom"]]                                                                                                                                                                                                      |
-| [3, “”]             | [["salmon", "tuna", "chicken"], ["salmon", "tuna", "bacon"], ["salmon", "tuna", "mushroom"], ["salmon", "chicken", "bacon"], ["salmon", "chicken", "mushroom"], ["salmon", "bacon", "mushroom"], ["tuna", "chicken", "bacon"], ["tuna", "chicken", "mushroom"], ["chicken", "bacon", "mushroom"]] |
+| [3, “”]             | [["salmon", "tuna", "chicken"], ["salmon", "tuna", "bacon"], ["salmon", "tuna", "mushroom"], ["salmon", "chicken", "bacon"], ["salmon", "chicken", "mushroom"], ["salmon", "bacon", "mushroom"], ["tuna", "chicken", "bacon"], ["tuna", "chicken", "mushroom"], ["tuna", "bacon", "mushroom"], ["chicken", "bacon", "mushroom"]] |
 
 ---
 
@@ -73,5 +73,5 @@ For example, if the number of toppings is entered as 3 but no topping is actuall
 ```text
 [["salmon", "tuna", "chicken"], ["salmon", "tuna", "bacon"], ["salmon", "tuna", "mushroom"],
 ["salmon", "chicken", "bacon"], ["salmon", "chicken", "mushroom"], ["salmon", "bacon", "mushroom"],
-["tuna", "chicken", "bacon"], ["tuna", "chicken", "mushroom"], ["chicken", "bacon", "mushroom"]]
+["tuna", "chicken", "bacon"], ["tuna", "chicken", "mushroom"], ["tuna", "bacon", "mushroom"], ["chicken", "bacon", "mushroom"]]
 ```

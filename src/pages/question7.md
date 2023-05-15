@@ -29,7 +29,7 @@ SoulGom made a mining cart and was able to move even more jewels. The mining car
 -   2 ≤ length of list ≤ 99
 -   There is only one correct answer.
 -   The index of the result should be returned in ascending order.
--   Input is given as a two-dimensional list in the form of `[ weight of jewels list, weight of mining cart ]`.
+-   Input is given as a two-dimensional list in the form of [`weight of jewels list`, `weight of mining cart`].
 
 ---
 
