@@ -13,13 +13,13 @@ The feline species are as follows.
 Korean Shorthair, British Shothair, Maine Coon, Sphynx, Bengal, Norwegian Forest
 ```
 
-Given a string array representing cat breeds collected by region and an integer array representing population, return them in order from the most number of types in descending order.
+Given a breed array collected by region and a population array, return them in order from the most number of types in descending order.
 
 ---
 
 ## Constraints
 
-- The length of the array representing the breed and the array for the population should be the same.
+- The breed array and population array have the same length.
 - Both arrays have a length between 1 and 10,000. 
 - If there are multiple breeds with the same population, they are sorted in alphabetical order.
 
@@ -37,7 +37,7 @@ Given a string array representing cat breeds collected by region and an integer 
 
 ## Explanation for Examples
 
-A string array representing cat breeds and an array of numbers representing each population are input. Return the breeds in the order of the most number of types in descending order.
+The breed array and population array are input. Return the breeds in the order of the most number of types in descending order.
 
 1. The breed array ['Sphinx', 'British Shorthair', 'Sphinx', 'Sphinx', 'Bengal', 'Maine Coon'] and the population array [3, 16, 1, 9, 25, 5] are given.
 2. The largest number in the population array is 25, which is mapped to 'Bengal'. Therefore, 'Bengal' is first in order. 
