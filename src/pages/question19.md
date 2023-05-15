@@ -10,7 +10,7 @@ Catching fish near Skull Island, Licat encountered a fierce storm.
 
 " The storm is too strong to go home, meow...
 
-Licat anchored the ship on the beach and began to explore the island in search of a place to stay for the night. There were various statues scattered around Skull Island. Then, a muffled voice was heard from somewhere.
+Licat anchored the ship on the beach and began to explore the island in search of a place to stay for the night. Strangely enough, there were various statues scattered around Skull Island. Then, a muffled voice was heard from somewhere.
 
 " Who are you? This is a place where alive people cannot reach... Interesting that you came from a dream.
 
@@ -46,4 +46,4 @@ Given an array containing the weights of the fish, find the minimum number of fi
 
 ## Explanation for Examples
 
-When an array of fish weights [45, 5, 3, 15] is given and K is 100, there are several combinations that satisfy 100. Among them, the minimum number of fish required to meet the K is 4(45, 45, 5, and 5).
+When an array of fish weights is [45, 5, 3, 15] and K is 100, there are several combinations that satisfy 100. Among them, the minimum number of fish required to meet the K is 4(45, 45, 5, and 5).

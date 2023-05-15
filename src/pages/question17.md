@@ -5,7 +5,7 @@
 # Robot-Cat Inspection Day
 
 ## Problem Description
-Licat decided to create a robot called 'Robot-Cat' as a deputy version of Licat's Fish Inc. to operate the giant company. He assigned a unique identification number to each Robot-Cat to easily manage them. Then, Robot-Cats flew all over to Weniv World.
+Licat decided to create a robot called 'Robot-Cat' as a deputy version of Licat's Fish Inc. to operate the giant company. He assigned a unique identification number to each Robot-Cat to easily manage them. Then, Robot-Cats left for Weniv World.
 
 On the Robot-Cat inspection day, most of the Robot-Cats returned to the company. However, there were also some Robot-Cats that couldn't return because they were too far away. For the Robot-Cats that need inspection but did not attend, an alarm should be sent.
 

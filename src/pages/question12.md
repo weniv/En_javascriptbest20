@@ -6,7 +6,7 @@
 ![SoulGom's favorite food: Spicy Hot Pot](./12_1.webp)
 
 ## Problem Description
-NPC SoulGom gained a soul and can now eat a human food. She wants to visit her favorite Spicy Hot Pot restaurant and put as many ingredients as possible because she can't come out of the mine frequently. However, the maximum number of ingredients to put in is limited.
+NPC SoulGom gained a soul and can now eat human food. She wants to visit a Hot Pot restaurant and put in as many ingredients as possible. However, the maximum number of ingredients to put in is limited.
 
 The ingredients for Spicy Hot Pot are given below, and the maximum number of ingredients that can be put is given in an array.
 

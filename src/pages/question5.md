@@ -18,7 +18,7 @@ Binky started to cultivate a field. She wanted to restore peace through the most
 
 1. The carrot field consists of N x M cells. (N: rows, M: columns)
 2. Spoiled carrots are represented as `#`.
-3. There are only spoiled carrots left in the carrot field, and some cells are empty. Binky decided to give the `number of spoiled carrots` and the `number of adjacent spoiled carrots` on the empty cell for efficient placement of labor. You need to write the total number of spoiled carrots and the total number of spoiled carrots located around the empty cell.
+3. There are only spoiled carrots left in the carrot field, and some cells are empty. Binky decided to give the `number of spoiled carrots` and the `number of adjacent spoiled carrots` on the empty cell for efficient placement of labor. You need to write the `total number of spoiled carrots` and the `total number of spoiled carrots located around the empty cell`.
 4. There are up to eight cells located around the perimeter: up, down, left, and right, and four diagonal cells.
 
 The table below is a carrot field. The cells around A2 are A1, B1, B2, B3, A3, and the number of spoiled carrots to be written in A2 is 2. Here, `#` indicates the spoiled carrot.
@@ -75,4 +75,4 @@ If you write the number of spoiled carrots in all empty cells, the result is as 
 
 -   A carrot field consisting of a two-dimensional list is input. After filling in the empty cells with the number of spoiled carrots located on the perimeter, the sum of all numbers is output as the result.
 -   For example, if `[[0, ‘#’], [0, 0]]` is input, the empty spaces where the number of spoiled carrots should be entered are (0, 0), (1, 0), and (1, 1).
--   Here, all the numbers of spoiled carrots located on each perimeter are the same as 1.The array with the numbers entered is `[[1, ‘#’], [1, 1]]`, and the total sum is 3. Therefore, the return value is `[1, 3]`.
+-   Here, all the numbers of spoiled carrots located on each perimeter are the same as 1. The array with the numbers entered is `[[1, ‘#’], [1, 1]]`, and the total sum is 3. Therefore, the return value is `[1, 3]`.

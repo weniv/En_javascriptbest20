@@ -14,7 +14,7 @@ The gathered oranges are kept in one box until the order date. Ripe oranges emit
 
 Adjacent oranges mean the top, bottom, left, and right directions, and diagonal oranges do not affect adjacent oranges. If an adjacent orange is unripe, it will become ripe, and if it is ripe already, both oranges will rot. In both cases, it takes a day.
 
-Suppose that only ripe oranges can be sold, find the total number of oranges that can be sold in 'k' days from the harvest day. If no oranges can be sold, print -1.
+When only ripe oranges can be sold, find the total number of oranges that can be sold after 'k' days from the harvest day. If no oranges can be sold, print -1.
 
 The table below is an orange box and represents the condition of oranges. 1 means ripe oranges, 0 means unripe oranges, and -1 means rotten oranges. The order will be placed in three days.
 
@@ -26,7 +26,7 @@ The table below is an orange box and represents the condition of oranges. 1 mean
 | 4 | 0 | 0 | 0 | 0 | 0 |
 | 5 | 0 | 0 | 0 | 0 | 0 |
 
-After one day, the unripe oranges [1, 2] and [2, 1] which are adjacent to ripe orange [1, 1] became ripe as shown below.
+The next day, the unripe oranges [1, 2] and [2, 1] which are adjacent to a ripe orange [1, 1] became ripe as shown below.
 
 |  | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ After two days, the ripened oranges [1, 1], [1, 2], and [2, 1] got rotten, and t
 | 4 | 0 | 0 | 0 | 0 | 0 |
 | 5 | 0 | 0 | 0 | 0 | 0 |
 
-After three days, the oranges [1, 4], [2, 3], [3, 2], and [4, 1] that were adjacent to the ripe oranges turned into ripe, and the number of oranges that Ali can sell is increased to 7.
+On the last day, the oranges [1, 4], [2, 3], [3, 2], and [4, 1] that were adjacent to the ripe oranges turned ripe, and the number of oranges that Ali can sell is increased to 7.
 
 |  | 1 | 2 | 3 | 4 | 5 |
 | --- | --- | --- | --- | --- | --- |

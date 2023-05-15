@@ -95,7 +95,7 @@ testcase_and_result = [{
     "kinds": "Combination",
     "testcase": [[0, ""], [2, "연어"], [3, ""]],
    "result": ["Basic Poke will be provided.", [["salmon", "tuna"], ["salmon", "chicken"], ["salmon", "bacon"], ["salmon", "mushroom"]],
-               [["salmon", "tuna", "chicken"], ["salmon", "tuna", "bacon"], ["salmon", "tuna", "mushroom"], ["salmon", "chicken", "bacon"], ["salmon", "chicken", "mushroom"], ["salmon", "bacon", "mushroom"], ["tuna", "chicken", "bacon"], ["tuna", "chicken", "mushroom"], ["chicken", "bacon", "mushroom"]]
+               [["salmon", "tuna", "chicken"], ["salmon", "tuna", "bacon"], ["salmon", "tuna", "mushroom"], ["salmon", "chicken", "bacon"], ["salmon", "chicken", "mushroom"], ["salmon", "bacon", "mushroom"], ["tuna", "chicken", "bacon"], ["tuna", "chicken", "mushroom"], ["tuna", "bacon", "mushroom"], ["chicken", "bacon", "mushroom"]]
                ]
 }, {
     "que_number": 11,

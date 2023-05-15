@@ -8,7 +8,7 @@
 ## Problem Description
 Binky has picked out some carrots that are no longer fresh to create a delicious carrot cake for her colleagues.
 
-1. A budget and an array of names, prices, and priorities of each ingredient are given.
+1. An array of names, prices, and priorities of each ingredient and a budget are given.
 2. Within budget, the ingredients must be purchased in order of priority.
 
 Please write a solution function that returns the ingredients that can be purchased within budget.
@@ -44,4 +44,4 @@ The function takes two inputs:
 
 The function should return an array of ingredients that can be purchased in order of priority.
 
-For example, let's say the following inputs are given: [['milk', 'egg', 'butter', 'chocolate cinnamon', 'pineapple', 'cream'], [10, 5, 5, 18, 6, 3], [1, 3, 2, 4, 5, 6]] and 10. If we arrange the ingredients in order of priority, we get ['milk', 'butter', 'egg', 'chocolate cinnamon', 'pineapple', 'cream']. Since only milk, which costs 10, can be purchased within the given budget of 10, the function should return ['milk'].
+For example, let's say the following inputs are given: [['milk', 'egg', 'butter', 'chocolate cinnamon', 'pineapple', 'cream'], [10, 5, 5, 18, 6, 3], [1, 3, 2, 4, 5, 6]] and 10 for budget. If we arrange the ingredients in order of priority, we get ['milk', 'butter', 'egg', 'chocolate cinnamon', 'pineapple', 'cream']. Since only milk, which costs 10, can be purchased within the given budget of 10, the function should return ['milk'].

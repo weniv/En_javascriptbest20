@@ -7,7 +7,7 @@
 ## Problem Description
 Licat's Fish Inc. had an unexpected situation where the leader, No.1, had to leave for a personal mission. Licat's Fish Inc. was left without anyone in charge and all the operations were paralyzed. To select a new leader, No.1 set the following problem. The one who solves this problem will become the new leader of Licat's Fish Inc. The problem is as follows.
 
-Given an input array consisting of ASCII codes, it should be converted to corresponding Roman numerals using the following table. Then all the possible combinations of numbers are extracted, and the maximum value M is returned.
+Given an input array consisting of ASCII codes, it should be converted to corresponding Roman numerals using the following table. Then all the possible combinations of symbols are extracted, and the maximum value M is returned.
 
 | Roman Numeral | Value |
 | --- | --- |
@@ -19,7 +19,7 @@ Given an input array consisting of ASCII codes, it should be converted to corres
 | D | 500 |
 | M | 1000 |
 
-Roman numerals can be written in subtractive notation, meaning that a smaller numeral is placed before a larger numeral to represent a single numeral using two characters. For example, IV represents 4 (5-1). The solution function should follow this notation rule.
+Roman numerals can be written in subtractive notation, meaning that a smaller numeral is placed before a larger numeral to represent a single numeral using two characters. For example, IV represents 4 (5(V)-1(I)). The solution function should follow this notation rule.
 
 ---
 
