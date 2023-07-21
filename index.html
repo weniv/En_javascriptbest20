@@ -48,6 +48,7 @@
     <script src="./src/js/editor.js" defer></script>
     <script src="./src/js/parser.js" defer></script>
     <script src="./src/js/event.js" defer></script>
+    <script src="./src/js/ad.js" defer></script>
     <script src="./src/js/nav.js" defer></script>
     <script src="./src/js/timer.js" defer></script>
     <script src="./src/js/chat.js" type="module" defer></script>
@@ -225,6 +226,46 @@
                             <img src="./src/img/close-wh.webp" alt="Close AI chat">
                         </button>
                     </article>
+
+                    <div id="kg-carousel">
+                        <!-- ad image -->
+                        <ul id="kg-inner">
+                            <li class="kg-img">
+                                <a href="https://www.youtube.com/watch?v=sv3J28JDGhA&list=PLkfUwwo13dlUqZhmiLdl0i_nDyWVF40zB" target="_blank">
+                                    <img src="./src/img/ad1.webp" loading="lazy" alt="Go to JSalgo Youtube course" />
+                                </a>
+                            </li>
+                            <li class="kg-img">
+                                <a href="https://www.youtube.com/watch?v=y3zAFledtuM&list=PLkfUwwo13dlXMChSGQ6W3GVb44w0bsfp2" target="_blank">
+                                    <img src="./src/img/ad2.webp" loading="lazy" alt="Go to Pyalgo Youtube course">
+                                </a>
+                            </li>
+                            <!-- 배너 추가 삭제시 아래 radio 및 js.css 수정 필요 -->
+                        </ul>
+
+                        <!-- pagination -->
+                        <button id="kg-before">
+                            <img src="./src/img/chevron-prev.webp" alt="광고 뒤로가기"/>
+                        </button>
+                        <input type="radio" checked class="kg-pagination" name="radio-btn" id="radio1">
+                        <input type="radio" class="kg-pagination" name="radio-btn" id="radio2">
+                        <button id="kg-next">
+                        <img src="./src/img/chevron-prev.webp" alt="광고 넘어가기"/>
+                        </button>
+
+                        <div id="kg-nav">
+                            <div id="nav-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                            </div>
+
+                            <div id="nav-maunal">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+
+                            </div>
+                        </div>
+                    </div>
 
                     <py-script>
                         #from testCaseAndResult import test
