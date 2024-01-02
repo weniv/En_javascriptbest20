@@ -1,7 +1,7 @@
 const $btnQue = document.querySelectorAll('.btn-que');
 const $btnRun = document.querySelector("#btn-run");
 const $resultInfo = document.querySelector("#result_info");
-const $btnsDownload = document.querySelectorAll(".btn-download");
+const $btnsDownload = document.querySelector(".btn-download");
 const $languageSelector = document.querySelector(".lang-selector");
 const OLD_CONSOLE_LOG = console.log;
 let debug = true;
@@ -82,49 +82,37 @@ const fetchQuestionInfo = async () => {
     }
 }
 
-$btnsDownload.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-        let totalData = ''
-        const res = fetchQuestionInfo()
-        res.then((response) => {
-            const questionInfo = JSON.parse(response.split('=')[1].slice(1))
-            for (let i = 1; i < 21; i++) {
-                let localStorageValue = window.localStorage.getItem(i);
-                let passCheck = window.localStorage.getItem(`${i}_check`);
-                if (!!localStorageValue) {
-                    localStorageValue = '```javascript\n' + localStorageValue + '\n```'
-                    if (!!passCheck) {
-                        localStorageValue = `# Question ${i}번\n\n* Level : ${questionInfo[i]['lv']}\n* Topic : ${questionInfo[i]['kinds']}\n* P/F : P\n\n${localStorageValue}\n\n`
-                    } else {
-                        localStorageValue = `# Question ${i}번\n\n* Level : ${questionInfo[i]['lv']}\n* Topic : ${questionInfo[i]['kinds']}\n* P/F : F\n\n${localStorageValue}\n\n`
-                    }
-                    totalData += localStorageValue
+$btnsDownload.addEventListener("click", (e) => {
+    let totalData = ''
+    const res = fetchQuestionInfo()
+    res.then((response) => {
+        const questionInfo = JSON.parse(response.split('=')[1].slice(1))
+        for (let i = 1; i < questionInfo.length; i++) {
+            let localStorageValue = window.localStorage.getItem(i);
+            let passCheck = window.localStorage.getItem(`${i}_check`);
+            if (!!localStorageValue) {
+                localStorageValue = '```javascript\n' + localStorageValue + '\n```'
+                if (!!passCheck) {
+                    localStorageValue = `# Question ${i}번\n\n* Level : ${questionInfo[i]['lv']}\n* Topic : ${questionInfo[i]['kinds']}\n* P/F : P\n\n${localStorageValue}\n\n`
+                } else {
+                    localStorageValue = `# Question ${i}번\n\n* Level : ${questionInfo[i]['lv']}\n* Topic : ${questionInfo[i]['kinds']}\n* P/F : F\n\n${localStorageValue}\n\n`
                 }
+                totalData += localStorageValue
             }
-            if (!!totalData) {
-                const name = `solution_total`;
-                downloadFile({
-                    data: totalData,
-                    fileName: `${name}.md`,
-                    fileType: 'text/json',
-                });
-            } else {
-                window.alert('There is no data to download.')
-            }
-        })
+        }
+        if (!!totalData) {
+            const name = `solution_total`;
+            downloadFile({
+                data: totalData,
+                fileName: `${name}.md`,
+                fileType: 'text/json',
+            });
+        } else {
+            window.alert('There is no data to download.')
+        }
     })
 })
 
-$languageSelector.addEventListener('change', (e) => {
-    lang = e.target.value;
-
-    if (lang === 'python'){
-        window.location = 'https://pyalgo.net/';
-    } else {
-        return;
-    }
-
-})
 
 window.onload = function(){
     const options = $languageSelector.querySelectorAll('option');
